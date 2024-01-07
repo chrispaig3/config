@@ -1,0 +1,20 @@
+# Font
+font:
+  normal:
+    family: JetBrains Mono
+    style: Regular
+
+# Cursor
+cursor:
+  style:
+    shape: Underline
+    blinking: Always
+  blink_interval: 500
+  unfocused_hollow: true
+  thickness: 0.15
+
+# Initial Window Sizing
+window:
+  dimensions:
+    columns: 133
+    lines: 40
