@@ -4,6 +4,7 @@ sudo dnf copr enable varlad/helix
 sudo dnf in $PKG_LIST --allowerasing
 mv helix $HOME/.config
 mv alacritty $HOME/.config
+mkdir $HOME/.cache/sccache
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
 rustup default stable
