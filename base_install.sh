@@ -6,7 +6,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
 rustup default stable
 rustup component add rust-analyzer && rustup target add wasm32-unknown-unknown
-cargo install cargo-edit cargo-audit cargo-geiger cargo-outdated cargo-deny cargo-info cargo-show-asm cargo-expand cargo-license cargo-release cargo-watch cargo-tarpaulin sccache bindgen-cli hyperfine trunk cross ripgrep eza starship slint-lsp  
+cargo install cargo-edit cargo-audit cargo-geiger cargo-outdated cargo-deny cargo-info cargo-show-asm cargo-expand cargo-license cargo-release cargo-watch cargo-tarpaulin cargo-shuttle sccache bindgen-cli hyperfine trunk cross ripgrep eza starship slint-lsp  
 cargo install zellij --locked
 cargo install taplo-cli --locked --features lsp
 cargo install --git https://github.com/wgsl-analyzer/wgsl-analyzer wgsl_analyzer
