@@ -4,11 +4,11 @@ sudo dnf copr enable varlad/helix
 sudo dnf in $PKG_LIST --allowerasing
 mv helix $HOME/.config
 mv alacritty $HOME/.config
-mv cargo/config.toml $HOME/.cargo
 mkdir $HOME/.cache/sccache
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
 rustup default stable
+mv cargo/config.toml $HOME/.cargo
 rustup component add rust-analyzer && rustup target add wasm32-unknown-unknown
 cargo install cargo-edit cargo-audit cargo-geiger cargo-outdated cargo-deny cargo-info cargo-show-asm cargo-expand cargo-license cargo-release cargo-watch cargo-tarpaulin cargo-shuttle sccache bindgen-cli hyperfine trunk cross ripgrep eza starship slint-lsp  
 cargo install zellij --locked
