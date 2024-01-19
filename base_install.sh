@@ -9,7 +9,7 @@ PKG_LIST="zsh mosh parallel git perl opam gcc make cmake clang mold lldb llvm st
 sudo dnf copr enable varlad/helix
 sudo dnf in $PKG_LIST --allowerasing
 git clone https://github.com/ryanoasis/nerd-fonts
-cd nerd-fonts/patched-fonts/NerdFontsSymbolsOnly && sudo mv SymbolsNerdFont* /usr/share/fonts
+cd nerd-fonts/patched-fonts/NerdFontsSymbolsOnly && sudo mv SymbolsNerdFont* /usr/share/fonts; cd ../
 mv helix $HOME/.config
 mv alacritty $HOME/.config
 mkdir $HOME/.cache/sccache
