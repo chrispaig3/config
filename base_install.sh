@@ -1,6 +1,9 @@
 #!/bin/sh
 
 # Depends on RPM FUSION
+# A quick and dirty install/setup script for fresh Fedora Linux installations 
+# Author: V0idMatr1x - Chris 
+# Date: 1/19/2024
 
 PKG_LIST="zsh mosh parallel git perl opam gcc make cmake clang mold lldb llvm strace helix nodejs npm yarnpkg akmod-nvidia nvidia-persistenced xorg-x11-drv-nvidia-cuda obs-studio blender gamemode godot lutris winetricks akmod-VirtualBox VirtualBox protobuf-compiler podman podman-compose kubernetes jetbrains-mono-fonts alacritty gh btop snapper btrfsmaintenance btrfs-assistant thunderbird mpv ffmpeg"
 sudo dnf copr enable varlad/helix
