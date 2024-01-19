@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Depends on RPM FUSION
-# A quick and dirty install/setup script for fresh Fedora Linux installations 
+# A quick and dirty (lazy) install/setup script for fresh Fedora Linux installations 
 # Author: V0idMatr1x - Chris 
 # Date: 1/19/2024
 
