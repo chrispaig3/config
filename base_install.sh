@@ -14,4 +14,5 @@ cargo install zellij --locked
 cargo install taplo-cli --locked --features lsp
 cargo install --git https://github.com/wgsl-analyzer/wgsl-analyzer wgsl_analyzer
 sudo npm i -g prettier bash-language-server typescript typescript-language-server yaml-language-server@next @ansible/ansible-language-server @tailwindcss/language-server @astrojs/language-server sql-language-server vscode-langservers-extracted dockerfile-language-server-nodejs
+chsh
 systemctl reboot -i
