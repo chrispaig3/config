@@ -5,7 +5,7 @@
 # Author: V0idMatr1x - Chris 
 # Date: 1/19/2024
 
-PKG_LIST="kernel-cachyos-bore-eevdf kernel-cachyos-bore-eevdf-devel zsh mosh parallel perl python-devel fluidsynth-devel qbittorrent opam gcc go make cmake clang mold lldb llvm strace helix nodejs npm yarnpkg akmod-nvidia nvidia-persistenced xorg-x11-drv-nvidia-cuda steam obs-studio blender gamemode lutris winetricks godot akmod-VirtualBox VirtualBox protobuf-compiler podman podman-compose kubernetes jetbrains-mono-fonts alacritty gh btop snapper btrfsmaintenance btrfs-assistant thunderbird mpv ffmpeg"
+PKG_LIST="dkms kernel-cachyos-bore-eevdf kernel-cachyos-bore-eevdf-devel zsh mosh parallel perl python-devel fluidsynth-devel qbittorrent opam gcc go make cmake clang mold lldb llvm strace helix nodejs npm yarnpkg akmod-nvidia nvidia-persistenced xorg-x11-drv-nvidia-cuda steam obs-studio blender gamemode lutris winetricks godot akmod-VirtualBox VirtualBox protobuf-compiler podman podman-compose kubernetes jetbrains-mono-fonts alacritty gh btop snapper btrfsmaintenance btrfs-assistant thunderbird mpv ffmpeg"
 sudo dnf copr enable varlad/helix
 sudo dnf copr enable bieszczaders/kernel-cachyos
 sudo dnf in $PKG_LIST --allowerasing
