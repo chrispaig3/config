@@ -5,7 +5,7 @@
 # Author: V0idMatr1x - Chris 
 # Date: 1/19/2024
 
-PKG_LIST="zsh mosh parallel git perl opam gcc make cmake clang mold lldb llvm strace helix nodejs npm yarnpkg akmod-nvidia nvidia-persistenced xorg-x11-drv-nvidia-cuda obs-studio blender gamemode godot akmod-VirtualBox VirtualBox protobuf-compiler podman podman-compose kubernetes jetbrains-mono-fonts alacritty gh btop snapper btrfsmaintenance btrfs-assistant thunderbird mpv ffmpeg"
+PKG_LIST="zsh mosh parallel git perl python-devel opam gcc make cmake clang mold lldb llvm strace helix nodejs npm yarnpkg akmod-nvidia nvidia-persistenced xorg-x11-drv-nvidia-cuda obs-studio blender gamemode godot akmod-VirtualBox VirtualBox protobuf-compiler podman podman-compose kubernetes jetbrains-mono-fonts alacritty gh btop snapper btrfsmaintenance btrfs-assistant thunderbird mpv ffmpeg"
 sudo dnf copr enable varlad/helix
 sudo dnf in $PKG_LIST --allowerasing
 git clone https://github.com/ryanoasis/nerd-fonts.git
