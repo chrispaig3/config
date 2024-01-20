@@ -10,6 +10,9 @@ export PATH=/usr/local/clangd/bin:$PATH
 # FASM
 export PATH=/usr/local/fasm:$PATH
 
+# Go
+export PATH=$HOME/go/bin:$PATH
+
 # Eza
 alias ls="eza --icons"
 
