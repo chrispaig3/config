@@ -5,7 +5,7 @@
 # Author: V0idMatr1x - Chris 
 # Date: 1/19/2024
 
-PKG_LIST="zsh mosh parallel perl python-devel fluidsynth-devel qbittorrent opam gcc make cmake clang mold lldb llvm strace helix nodejs npm yarnpkg akmod-nvidia nvidia-persistenced xorg-x11-drv-nvidia-cuda obs-studio blender gamemode lutris winetricks godot akmod-VirtualBox VirtualBox protobuf-compiler podman podman-compose kubernetes jetbrains-mono-fonts alacritty gh btop snapper btrfsmaintenance btrfs-assistant thunderbird mpv ffmpeg"
+PKG_LIST="zsh mosh parallel perl python-devel fluidsynth-devel qbittorrent opam gcc go make cmake clang mold lldb llvm strace helix nodejs npm yarnpkg akmod-nvidia nvidia-persistenced xorg-x11-drv-nvidia-cuda obs-studio blender gamemode lutris winetricks godot akmod-VirtualBox VirtualBox protobuf-compiler podman podman-compose kubernetes jetbrains-mono-fonts alacritty gh btop snapper btrfsmaintenance btrfs-assistant thunderbird mpv ffmpeg"
 sudo dnf copr enable varlad/helix
 sudo dnf in $PKG_LIST --allowerasing
 git clone https://github.com/ryanoasis/nerd-fonts.git
@@ -18,6 +18,9 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
 rustup default stable
 mv cargo/config.toml $HOME/.cargo
+go install golang.org/x/tools/gopls@latest
+go install github.com/go-delve/delve/cmd/dlv@latest
+go install golang.org/x/tools/cmd/goimports@latest
 rustup component add rust-analyzer && rustup target add wasm32-unknown-unknown
 cargo install cargo-edit cargo-audit cargo-geiger cargo-outdated cargo-deny cargo-info cargo-show-asm cargo-expand cargo-license cargo-release cargo-watch cargo-tarpaulin cargo-shuttle sccache bindgen-cli hyperfine trunk cross ripgrep eza starship slint-lsp  
 cargo install zellij --locked
