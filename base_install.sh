@@ -13,7 +13,6 @@ cd nerd-fonts/patched-fonts/NerdFontsSymbolsOnly && sudo mv SymbolsNerdFont* /us
 mv helix $HOME/.config
 mv alacritty $HOME/.config
 mkdir $HOME/.cache/sccache
-mkdir $HOME/.cache/starcitizen-cache
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
 rustup default stable
