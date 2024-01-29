@@ -1,5 +1,5 @@
 #!/bin/sh
-sudo dnf rm vi kmail
+sudo dnf rm vi kmail konsole
 PKG_LIST="zsh mosh parallel perl sqlite-devel python-devel qbittorrent opam gcc go make cmake clang mold lldb llvm strace helix nodejs npm yarnpkg akmod-nvidia nvidia-persistenced xorg-x11-drv-nvidia-cuda obs-studio blender gamemode godot akmod-VirtualBox VirtualBox protobuf-compiler podman podman-compose kubernetes jetbrains-mono-fonts alacritty gh btop snapper btrfsmaintenance btrfs-assistant thunderbird mpv ffmpeg"
 sudo dnf copr enable varlad/helix
 sudo dnf in $PKG_LIST --allowerasing
