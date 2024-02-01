@@ -8,7 +8,6 @@ cd nerd-fonts/patched-fonts/NerdFontsSymbolsOnly && sudo mv SymbolsNerdFont* /us
 mv helix $HOME/.config
 mv alacritty $HOME/.config
 mkdir $HOME/.cache/sccache
-pip install -U 'python-lsp-server[all]'
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
 rustup default stable
