@@ -1,7 +1,8 @@
 #!/bin/sh
 sudo dnf rm vi kmail konsole
-PKG_LIST="zsh mosh parallel perl sqlite-devel python-devel qbittorrent opam gcc valgrind go make cmake clang doxygen mold lldb llvm strace binwalk helix nodejs npm yarnpkg akmod-nvidia nvidia-persistenced xorg-x11-drv-nvidia-cuda obs-studio blender gamemode godot akmod-VirtualBox VirtualBox protobuf-compiler podman podman-compose kubernetes jetbrains-mono-fonts alacritty gh btop snapper btrfsmaintenance btrfs-assistant thunderbird mpv ffmpeg"
+PKG_LIST="zsh gh mullvad-vpn mosh parallel perl sqlite-devel python-devel qbittorrent opam gcc valgrind go make cmake clang doxygen mold lldb llvm strace binwalk helix nodejs npm yarnpkg akmod-nvidia nvidia-persistenced xorg-x11-drv-nvidia-cuda obs-studio blender gamemode godot akmod-VirtualBox VirtualBox protobuf-compiler podman podman-compose kubernetes jetbrains-mono-fonts alacritty btop snapper btrfsmaintenance btrfs-assistant thunderbird mpv ffmpeg"
 sudo dnf copr enable varlad/helix
+sudo dnf config-manager --add-repo https://repository.mullvad.net/rpm/stable/mullvad.repo
 sudo dnf in $PKG_LIST --allowerasing
 git clone https://github.com/ryanoasis/nerd-fonts.git
 cd nerd-fonts/patched-fonts/NerdFontsSymbolsOnly && sudo mv SymbolsNerdFont* /usr/share/fonts; cd $HOME/config
