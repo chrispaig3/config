@@ -21,3 +21,6 @@ alias z="zellij -l compact"
 
 # Starship Prompt
 eval "$(starship init zsh)"
+
+# Mold
+alias ld=mold
