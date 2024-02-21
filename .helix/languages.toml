@@ -1,0 +1,70 @@
+# Leptos
+[[language]]
+name = "rust"
+
+[language-server.rust-analyzer]
+config = { procMacro = { ignored = { leptos_macro = ["server"] } } }
+
+[[languages]]
+name = "go"
+auto-format = true
+formatter = { command = "goimports" }
+
+# Pyright
+[[language]]
+name = "python"
+language-servers = [ "pyright" ]
+
+# Astro
+[language-server.astro-ls]
+command = "astro-ls"
+args = ["--stdio"]
+config = {typescript = {tsdk = "/Users/user/.bun/install/global/node_modules/typescript/lib"}, environment = "node"}
+
+[[language]]
+name = "astro"
+auto-format = true
+language-servers = [ "astro-ls" ]
+
+# TOML
+[[language]]
+name = "toml"
+formatter = { command = "taplo", args = ["fmt", "-"] }
+
+# Yaml
+[language-server.yaml-language-server.config.yaml]
+format = { enable = true }
+validation = true
+
+# Json
+config = { "provideFormatter" = true, "json" = { "keepLines" = { "enable" = true } } }
+
+# Tailwind
+[[language]]
+name = "html"
+language-servers = [ "vscode-html-language-server", "tailwindcss-ls" ]
+
+[[language]]
+name = "css"
+language-servers = [ "vscode-css-language-server", "tailwindcss-ls" ]
+
+[[language]]
+name = "jsx"
+language-servers = [ "typescript-language-server", "tailwindcss-ls" ]
+
+[[language]]
+name = "tsx"
+language-servers = [ "typescript-language-server", "tailwindcss-ls" ]
+
+[[language]]
+name = "svelte"
+language-servers = [ "svelteserver", "tailwindcss-ls" ]
+
+# SQL
+[language-server.sql-language-server]
+command = "sql-language-server"
+args = ["up", "--method", "stdio"]
+
+[[language]]
+name = "sql"
+language-servers = [ "sql-language-server" ]
