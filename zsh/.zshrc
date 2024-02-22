@@ -1,7 +1,7 @@
 # Cargo
 export PATH=$HOME/.cargo/bin:$PATH 
 
-# Rust
+# sccache
 export RUSTC_WRAPPER=`which sccache`
 
 # Clangd
