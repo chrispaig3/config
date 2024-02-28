@@ -4,8 +4,6 @@ PKG_LIST="zsh gh mullvad-vpn mosh parallel perl sqlite-devel python-devel python
 sudo dnf copr enable varlad/helix
 sudo dnf config-manager --add-repo https://repository.mullvad.net/rpm/stable/mullvad.repo
 sudo dnf in $PKG_LIST --allowerasing
-git clone https://github.com/ryanoasis/nerd-fonts.git
-cd nerd-fonts/patched-fonts/NerdFontsSymbolsOnly && sudo mv SymbolsNerdFont* /usr/share/fonts; cd $HOME/config
 mv helix $HOME/.config
 mv alacritty $HOME/.config
 mkdir $HOME/.cache/sccache
