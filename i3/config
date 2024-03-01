@@ -7,14 +7,6 @@ set $mod Mod4
 # default i3 tiling mode:
 workspace_layout default
 
-# i3 stacking layout:
-# Each window will be fullscreen and tabbed top to bottom.
-#workspace_layout stacking
-
-# i3 tabbed layout:
-# Each new window will open fullscreen as a tab (left to right)
-#workspace_layout tabbed
-
 ##############################
 # extra options for windows: #
 ##############################
@@ -25,12 +17,6 @@ new_window pixel 1
 # Set inner/outer gaps
 gaps inner 6
 gaps outer 3
-
-# show window title bars (not officially supported with i3gaps)
-#default_border normal
-
-# window title alignment
-#title_align center
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -124,9 +110,6 @@ bindsym $mod+q kill
 # exit-menu
 bindsym $mod+Shift+e exec --no-startup-id ~/.config/i3/scripts/powermenu
 
-# Lock the system
-# lock with a picture:
-#bindsym $mod+l exec --no-startup-id i3lock -i  ~/.config/i3/i3-lock-screen.png -p default|win -t
 # lock by blurring the screen:
 bindsym $mod+l exec --no-startup-id ~/.config/i3/scripts/blur-lock
 
@@ -139,9 +122,6 @@ bindsym $mod+Shift+r restart
 # keybinding in fancy rofi (automated):
 bindsym F1 exec --no-startup-id ~/.config/i3/scripts/keyhint-2
 
-# Backlight control
-#bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight +10 && notify-send "Brightness - $(xbacklight -get | cut -d '.' -f 1)%"
-#bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -10 && notify-send "Brightness - $(xbacklight -get | cut -d '.' -f 1)%"
 # Backlight setting using dunst osc
 bindsym XF86MonBrightnessUp exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh brightness_up
 bindsym XF86MonBrightnessDown exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh brightness_down
@@ -197,7 +177,6 @@ bindsym $mod+a focus parent
 bindsym $mod+Shift+n exec --no-startup-id ~/.config/i3/scripts/empty_workspace
 
 # Multimedia Keys
-
 bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh volume_up
 bindsym XF86AudioLowerVolume exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh volume_down
 
@@ -220,9 +199,7 @@ bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 bindsym $mod+p exec --no-startup-id /usr/local/bin/switch-audio-port
 
 ## App shortcuts
-bindsym $mod+w exec --no-startup-id /usr/bin/firefox
-bindsym $mod+n exec --no-startup-id /usr/bin/thunar
-bindsym Print exec --no-startup-id "scrot -s"
+bindsym --release Print exec --no-startup-id "scrot -s"
 
 # Power Profiles menu switcher (rofi)
 bindsym $mod+Shift+p exec --no-startup-id ~/.config/i3/scripts/power-profiles
@@ -254,10 +231,7 @@ exec_always --no-startup-id picom --config  ~/.config/picom.conf
 #############################################
 # autostart applications/services on login: #
 #############################################
-
-#get auth work with polkit-gnome
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-
 exec --no-startup-id dex --autostart --environment i3
 
 # start a script to setup displays
