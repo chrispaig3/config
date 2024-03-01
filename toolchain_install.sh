@@ -1,4 +1,7 @@
 #!/bin/sh
+go install golang.org/x/tools/gopls@latest
+go install github.com/go-delve/delve/cmd/dlv@latest
+go install golang.org/x/tools/cmd/goimports@latest
 rustup component add rust-analyzer && rustup target add wasm32-unknown-unknown
 cargo install cargo-edit cargo-audit cargo-geiger cargo-outdated cargo-deny cargo-generate cargo-info cargo-show-asm cargo-expand cargo-about cargo-license cargo-release cargo-watch cargo-tarpaulin cargo-shuttle scriptisto sccache bpf-linker bindgen-cli hyperfine trunk cross ripgrep eza starship slint-lsp  
 cargo install cargo-feature --locked
