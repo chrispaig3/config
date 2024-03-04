@@ -1,6 +1,3 @@
-# Neofetch
-alias neofetch="neofetch -l --ascii_distro ArchLabs"
-
 # sccache
 export RUSTC_WRAPPER=`which sccache`
 
