@@ -9,6 +9,7 @@ cargo install zellij --locked
 cargo install taplo-cli --locked --features lsp
 cargo install --git https://github.com/wgsl-analyzer/wgsl-analyzer wgsl_analyzer
 cargo install --git https://github.com/nvarner/typst-lsp typst-lsp
+curl -LsSf https://astral.sh/uv/install.sh | sh
 git clone https://github.com/nbdd0121/klint.git
 cd klint
 cargo install --path .; cd $HOME
