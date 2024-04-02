@@ -102,14 +102,29 @@ $env.NU_PLUGIN_DIRS = [
 # Clangd
 $env.PATH = ($env.PATH | prepend '/usr/local/clangd/bin')
 
+# Elixir LS
+$env.PATH = ($env.PATH | prepend '/usr/local/elixir_ls')
+
+# Bun
+$env.PATH = ($env.PATH | prepend '/home/chris/.bun/bin')
+
 # Radicle CLI
 $env.PATH = ($env.PATH | prepend '/home/chris/.radicle/bin')
+
+# Opam Bin
+$env.PATH = ($env.PATH | prepend '/home/chris/.opam/default/bin')
+
+# Cargo Bin
+$env.PATH = ($env.PATH | prepend '/home/chris/.cargo/bin')
 
 # sccache
 $env.RUSTC_WRAPPER = (which sccache)
 
 # Mold
 alias ld = mold
+
+# Helix
+$env.PATH = ($env.PATH | prepend '/usr/local/helix')
 
 # Zellij
 alias z = zellij -l compact
