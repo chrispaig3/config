@@ -118,7 +118,7 @@ $env.PATH = ($env.PATH | prepend '/home/chris/.opam/default/bin')
 $env.PATH = ($env.PATH | prepend '/home/chris/.cargo/bin')
 
 # sccache
-$env.RUSTC_WRAPPER = (which sccache)
+$env.RUSTC_WRAPPER = ('/home/chris/.cargo/bin/sccache')
 
 # Mold
 alias ld = mold
