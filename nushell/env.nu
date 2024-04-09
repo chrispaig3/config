@@ -99,21 +99,6 @@ $env.NU_PLUGIN_DIRS = [
 # To load from a custom file you can use:
 # source ($nu.default-config-dir | path join 'custom.nu')
 
-# Clangd
-$env.PATH = ($env.PATH | prepend '/usr/local/clangd/bin')
-
-# Elixir LS
-$env.PATH = ($env.PATH | prepend '/usr/local/elixir_ls')
-
-# Bun
-$env.PATH = ($env.PATH | prepend '/home/chris/.bun/bin')
-
-# Radicle CLI
-$env.PATH = ($env.PATH | prepend '/home/chris/.radicle/bin')
-
-# Opam Bin
-$env.PATH = ($env.PATH | prepend '/home/chris/.opam/default/bin')
-
 # Cargo Bin
 $env.PATH = ($env.PATH | prepend '/home/chris/.cargo/bin')
 
