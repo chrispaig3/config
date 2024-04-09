@@ -106,7 +106,7 @@ $env.PATH = ($env.PATH | prepend '/home/chris/.cargo/bin')
 $env.RUSTC_WRAPPER = ('/home/chris/.cargo/bin/sccache')
 
 # Helix
-$env.HELIX_RUNTIME = ('/home/chris/.helix/runtime')
+$env.HELIX_RUNTIME = ('/home/chris/.helix/helix/runtime')
 
 # Mold
 alias ld = mold
