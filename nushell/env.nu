@@ -105,11 +105,11 @@ $env.PATH = ($env.PATH | prepend '/home/chris/.cargo/bin')
 # sccache
 $env.RUSTC_WRAPPER = ('/home/chris/.cargo/bin/sccache')
 
+# Helix
+$env.HELIX_RUNTIME = ('/home/chris/.helix/runtime')
+
 # Mold
 alias ld = mold
-
-# Helix
-$env.PATH = ($env.PATH | prepend '/usr/local/helix')
 
 # Zellij
 alias z = zellij -l compact
