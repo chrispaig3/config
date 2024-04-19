@@ -12,5 +12,5 @@ family = "JetBrains Mono"
 style = "Regular"
 
 [window.dimensions]
-columns = 133
-lines = 40
+columns = 200
+lines = 60
