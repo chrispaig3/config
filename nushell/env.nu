@@ -112,4 +112,6 @@ $env.HELIX_RUNTIME = ('/home/chris/.helix/helix/runtime')
 alias ld = mold
 
 # Zellij
-alias z = zellij -l compact
+alias z = zellij -l compact --layout /home/chris/.zellij/layout.kdl
+
+cd ~
