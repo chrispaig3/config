@@ -113,5 +113,3 @@ alias ld = mold
 
 # Zellij
 alias z = zellij -l compact --layout /home/chris/.zellij/layout.kdl
-
-cd ~
