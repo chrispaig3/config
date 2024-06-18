@@ -10,10 +10,14 @@ name = "go"
 auto-format = true
 formatter = { command = "goimports" }
 
-# Pyright
+# PyLsp
 [[language]]
 name = "python"
-language-servers = [ "pyright" ]
+language-servers = ["pylsp"]
+
+[language-server.pylsp.config.pylsp]
+plugins.pyls_mypy.enabled = true
+plugins.pyls_mypy.live_mode = true
 
 # Astro
 [language-server.astro-ls]
