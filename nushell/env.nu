@@ -71,8 +71,15 @@ $env.NU_PLUGIN_DIRS = [
 # Cargo Bin
 $env.PATH = ($env.PATH | prepend '/home/chris/.cargo/bin')
 
+# Zig
+$env.PATH = ($env.PATH | prepend '/home/chris/.zig')
+$env.PATH = ($env.PATH | prepend '/home/chris/.zls/zig-out/bin')
+
 # Go Bin
 $env.PATH = ($env.PATH | prepend '/home/chris/go/bin')
+
+# Radicle
+$env.PATH = ($env.PATH | prepend '/home/chris/.radicle/bin')
 
 # sccache
 $env.RUSTC_WRAPPER = ('/home/chris/.cargo/bin/sccache')
