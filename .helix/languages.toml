@@ -5,6 +5,15 @@ name = "rust"
 [language-server.rust-analyzer]
 config = { procMacro = { ignored = { leptos_macro = ["server"] } } }
 
+# Typst
+[language-server.tinymist]
+command = "tinymist"
+
+[[language]]
+name = "typst"
+language-servers = ["tinymist"]
+
+# Go
 [[languages]]
 name = "go"
 auto-format = true
@@ -48,18 +57,22 @@ config = { "provideFormatter" = true, "json" = { "keepLines" = { "enable" = true
 name = "html"
 language-servers = [ "vscode-html-language-server", "tailwindcss-ls" ]
 
+# CSS
 [[language]]
 name = "css"
 language-servers = [ "vscode-css-language-server", "tailwindcss-ls" ]
 
+# JSX
 [[language]]
 name = "jsx"
 language-servers = [ "typescript-language-server", "tailwindcss-ls" ]
 
+# TSX
 [[language]]
 name = "tsx"
 language-servers = [ "typescript-language-server", "tailwindcss-ls" ]
 
+# Svelte
 [[language]]
 name = "svelte"
 language-servers = [ "svelteserver", "tailwindcss-ls" ]
