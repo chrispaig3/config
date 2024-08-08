@@ -1,4 +1,4 @@
-theme = "dracula"
+theme = "dracula_at_night"
 
 [editor]
 line-number = "relative"
