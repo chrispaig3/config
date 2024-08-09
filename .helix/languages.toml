@@ -1,14 +1,12 @@
 # Leptos
 [[language]]
 name = "rust"
-
 [language-server.rust-analyzer]
 config = { procMacro = { ignored = { leptos_macro = ["server"] } } }
 
 # Typst
 [language-server.tinymist]
 command = "tinymist"
-
 [[language]]
 name = "typst"
 language-servers = ["tinymist"]
@@ -19,14 +17,18 @@ name = "go"
 auto-format = true
 formatter = { command = "goimports" }
 
-# PyLsp
+# Python
 [[language]]
 name = "python"
-language-servers = ["pylsp"]
-
-[language-server.pylsp.config.pylsp]
-plugins.pyls_mypy.enabled = true
-plugins.pyls_mypy.live_mode = true
+language-servers = ["pyright", "ruff", "pylyzer"]
+[language-server.pyright.config.python.analysis]
+typeCheckingMode = "basic"
+[language-server.ruff]
+command = "ruff"
+config = { settings = { args = ["server"] } }
+[language-server.pylyzer]
+command = "pylyzer"
+config = { settings = { args = ["--serve"] } }
 
 # Astro
 [language-server.astro-ls]
