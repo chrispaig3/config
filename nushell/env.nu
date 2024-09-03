@@ -67,6 +67,7 @@ $env.NU_PLUGIN_DIRS = [
 
 # To load from a custom file you can use:
 # source ($nu.default-config-dir | path join 'custom.nu')
+$env.PATH = ($env.PATH | prepend '/home/chris/.local/bin')
 
 # Cargo Bin
 $env.PATH = ($env.PATH | prepend '/home/chris/.cargo/bin')
