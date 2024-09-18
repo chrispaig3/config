@@ -1,19 +1,41 @@
+# Nushell Environment Config File
+#
+# version = "0.98.0"
 $env.STARSHIP_SHELL = "nu"
 
 def create_left_prompt [] {
     starship prompt --cmd-duration $env.CMD_DURATION_MS $'--status=($env.LAST_EXIT_CODE)'
 }
 
+def create_right_prompt [] {
+    # create a right prompt in magenta with green separators and am/pm underlined
+    let time_segment = ([
+        (ansi reset)
+        (ansi magenta)
+        (date now | format date '%x %X') # try to respect user's locale
+    ] | str join | str replace --regex --all "([/:])" $"(ansi green)${1}(ansi magenta)" |
+        str replace --regex --all "([AP]M)" $"(ansi magenta_underline)${1}")
+
+    let last_exit_code = if ($env.LAST_EXIT_CODE != 0) {([
+        (ansi rb)
+        ($env.LAST_EXIT_CODE)
+    ] | str join)
+    } else { "" }
+
+    ([$last_exit_code, (char space), $time_segment] | str join)
+}
+
 # Use nushell functions to define your right and left prompt
-$env.PROMPT_COMMAND = { || create_left_prompt }
+$env.PROMPT_COMMAND = {|| create_left_prompt }
+# FIXME: This default is not implemented in rust code as of 2023-09-08.
+$env.PROMPT_COMMAND_RIGHT = {|| create_right_prompt }
+
 # The prompt indicators are environmental variables that represent
 # the state of the prompt
-$env.PROMPT_INDICATOR = ""
-$env.PROMPT_INDICATOR_VI_INSERT = ": "
-$env.PROMPT_INDICATOR_VI_NORMAL = "〉"
-$env.PROMPT_MULTILINE_INDICATOR = "::: "
-# The prompt indicators are environmental variables that represent
-# the state of the prompt
+#$env.PROMPT_INDICATOR = {|| "" }
+$env.PROMPT_INDICATOR_VI_INSERT = {|| ": " }
+$env.PROMPT_INDICATOR_VI_NORMAL = {|| "> " }
+$env.PROMPT_MULTILINE_INDICATOR = {|| "::: " }
 
 # If you want previously entered commands to have a different prompt from the usual one,
 # you can uncomment one or more of the following lines.
@@ -46,6 +68,7 @@ $env.ENV_CONVERSIONS = {
 # The default for this is $nu.default-config-dir/scripts
 $env.NU_LIB_DIRS = [
     ($nu.default-config-dir | path join 'scripts') # add <nushell-config-dir>/scripts
+    ($nu.data-dir | path join 'completions') # default home for nushell completions
 ]
 
 # Directories to search for plugin binaries when calling register
