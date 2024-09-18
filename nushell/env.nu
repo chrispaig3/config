@@ -32,7 +32,7 @@ $env.PROMPT_COMMAND_RIGHT = {|| create_right_prompt }
 
 # The prompt indicators are environmental variables that represent
 # the state of the prompt
-#$env.PROMPT_INDICATOR = {|| "" }
+$env.PROMPT_INDICATOR = {|| "" }
 $env.PROMPT_INDICATOR_VI_INSERT = {|| ": " }
 $env.PROMPT_INDICATOR_VI_NORMAL = {|| "> " }
 $env.PROMPT_MULTILINE_INDICATOR = {|| "::: " }
@@ -94,6 +94,9 @@ $env.PATH = ($env.PATH | prepend '/home/chris/.local/bin')
 
 # Cargo Bin
 $env.PATH = ($env.PATH | prepend '/home/chris/.cargo/bin')
+
+# SurrealDB
+$env.PATH = ($env.PATH | prepend '/home/chris/.surrealdb')
 
 # Zig
 $env.PATH = ($env.PATH | prepend '/home/chris/.zig')
