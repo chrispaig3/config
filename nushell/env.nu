@@ -102,14 +102,14 @@ $env.PATH = ($env.PATH | prepend '/home/chris/.surrealdb')
 $env.PATH = ($env.PATH | prepend '/home/chris/.zig')
 $env.PATH = ($env.PATH | prepend '/home/chris/.zls/zig-out/bin')
 
+# Bun Bin
+$env.PATH = ($env.PATH | prepend '/home/chris/.bun/bin')
+
 # Go Bin
 $env.PATH = ($env.PATH | prepend '/home/chris/go/bin')
 
 # Radicle
 $env.PATH = ($env.PATH | prepend '/home/chris/.radicle/bin')
-
-# sccache
-$env.RUSTC_WRAPPER = ('/home/chris/.cargo/bin/sccache')
 
 # Helix
 $env.HELIX_RUNTIME = ('/home/chris/.helix/helix/runtime')
