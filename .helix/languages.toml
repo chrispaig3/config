@@ -44,6 +44,30 @@ name = "astro"
 auto-format = true
 language-servers = [ "astro-ls" ]
 
+# Tailwind
+[[language]]
+name = "rust"
+language-servers = ["rust-analyzer", "tailwindcss-ls"]
+
+[language-server.tailwindcss-ls]
+config = { userLanguages = { rust = "html", "*.rs" = "html" } }
+
+[[language]]
+name = "html"
+language-servers = [ "vscode-html-language-server", "tailwindcss-ls" ]
+
+[[language]]
+name = "css"
+language-servers = [ "vscode-css-language-server", "tailwindcss-ls" ]
+
+[[language]]
+name = "jsx"
+language-servers = [ "typescript-language-server", "tailwindcss-ls" ]
+
+[[language]]
+name = "tsx"
+language-servers = [ "typescript-language-server", "tailwindcss-ls" ]
+
 # TOML
 [[language]]
 name = "toml"
@@ -56,11 +80,6 @@ validation = true
 
 # Json
 config = { "provideFormatter" = true, "json" = { "keepLines" = { "enable" = true } } }
-
-# Tailwind
-[[language]]
-name = "html"
-language-servers = [ "vscode-html-language-server", "tailwindcss-ls" ]
 
 # CSS
 [[language]]
