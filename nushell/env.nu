@@ -1,6 +1,5 @@
 # Nushell Environment Config File
-#
-# version = "0.98.0"
+
 $env.STARSHIP_SHELL = "nu"
 
 def create_left_prompt [] {
