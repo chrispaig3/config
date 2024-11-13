@@ -27,7 +27,6 @@ channels = [
   "#sql",
   "#security",
   "#reddit-homelab",
-  "#reddit-sysadmin",
   "#regex",
   "#r/linux",
   "#riscv",
@@ -43,4 +42,19 @@ nickname = "username"
 server = "irc.oftc.net"
 channels = [
   "#wayland",
+]
+
+# [servers.snoonet]
+# nickname = "username"
+# nick_password = "<password>"
+# server = "irc.snoonet.org"
+# port = 6697
+# on_connect = [/msg NickServ IDENTIFY <password>]
+
+[servers.pissnet]
+nickname = "username"
+server = "irc.letspiss.net"
+port = 6697
+channels = [
+  "#pissnet",
 ]
