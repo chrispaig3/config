@@ -1,0 +1,46 @@
+# Halloy config.
+#
+# For a complete list of available options,
+# please visit https://halloy.squidowl.org/configuration/index.html
+
+[servers.liberachat]
+nickname = "username"
+server = "irc.libera.chat"
+channels = [
+  "#halloy",
+  "#qemu",
+  "#qt",
+  "#qbittorrent",
+  "#wireshark",
+  "#wireguard", 
+  "#wasm",
+  "#valgrind",
+  "#zig",
+  "#terraform",
+  "#typst",
+  "#typescript",
+  "#postgresql",
+  "#podman",
+  "#plasma",
+  "#okular",
+  "#starcitizen",
+  "#sql",
+  "#security",
+  "#reddit-homelab",
+  "#reddit-sysadmin",
+  "#regex",
+  "#r/linux",
+  "#riscv",
+  "#rizin",
+  "#rizindev",
+  "#rust-embedded",
+  "##rust",
+  "##rust-offtopic",
+]
+
+[servers.oftc]
+nickname = "username"
+server = "irc.oftc.net"
+channels = [
+  "#wayland",
+]
