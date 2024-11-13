@@ -49,7 +49,7 @@ channels = [
 # nick_password = "<password>"
 # server = "irc.snoonet.org"
 # port = 6697
-# on_connect = [/msg NickServ IDENTIFY <password>]
+# on_connect = ["/msg NickServ IDENTIFY <password>"]
 
 [servers.pissnet]
 nickname = "username"
