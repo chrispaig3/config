@@ -51,6 +51,13 @@ channels = [
 # port = 6697
 # on_connect = ["/msg NickServ IDENTIFY <password>"]
 
+# [servers.rizon]
+# nickname = "username"
+# nick_password = "<password>"
+# server = "irc.rizon.net"
+# port = 6697
+# on_connect = ["/msg NickServ IDENTIFY <password>"]
+
 [servers.pissnet]
 nickname = "username"
 server = "irc.letspiss.net"
