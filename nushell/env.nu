@@ -107,9 +107,6 @@ $env.PATH = ($env.PATH | prepend '/home/chris/.bun/bin')
 # Nimble Bin
 $env.PATH = ($env.PATH | prepend '/home/chris/.nimble/bin')
 
-# Go Bin
-$env.PATH = ($env.PATH | prepend '/home/chris/go/bin')
-
 # Radicle
 $env.PATH = ($env.PATH | prepend '/home/chris/.radicle/bin')
 
