@@ -23,12 +23,6 @@ language-servers = ["steel-language-server"]
 command = "steel-language-server"
 args = []
 
-# Go
-[[languages]]
-name = "go"
-auto-format = true
-formatter = { command = "goimports" }
-
 # Python
 [[language]]
 name = "python"
