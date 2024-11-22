@@ -113,8 +113,5 @@ $env.PATH = ($env.PATH | prepend '/home/chris/.radicle/bin')
 # Helix
 $env.HELIX_RUNTIME = ('/home/chris/.helix/helix/runtime')
 
-# Mold
-alias ld = mold
-
 # Zellij
 alias z = zellij -l compact --layout /home/chris/.zellij/layout.kdl
