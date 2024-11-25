@@ -1,4 +1,11 @@
 # Nushell Environment Config File
+
+#$env.STARSHIP_SHELL = "nu"
+
+#def create_left_prompt [] {
+#    starship prompt --cmd-duration $env.CMD_DURATION_MS $'--status=($env.LAST_EXIT_CODE)'
+#}
+
 def create_left_prompt [] {
     let dir = match (do --ignore-shell-errors { $env.PWD | path relative-to $nu.home-path }) {
         null => $env.PWD
