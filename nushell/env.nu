@@ -92,6 +92,9 @@ $env.PATH = ($env.PATH | prepend '/home/chris/.surrealdb')
 $env.PATH = ($env.PATH | prepend '/home/chris/.zig')
 $env.PATH = ($env.PATH | prepend '/home/chris/.zls/zig-out/bin')
 
+# Go Bin
+$env.PATH = ($env.PATH | prepend '/home/chris/go/bin')
+
 # Bun Bin
 $env.PATH = ($env.PATH | prepend '/home/chris/.bun/bin')
 
@@ -101,8 +104,12 @@ $env.PATH = ($env.PATH | prepend '/home/chris/.nimble/bin')
 # Radicle
 $env.PATH = ($env.PATH | prepend '/home/chris/.radicle/bin')
 
-# Helix
+# Helix Runtime
 $env.HELIX_RUNTIME = ('/home/chris/.helix/helix/runtime')
+
+# Ocaml Setup
+$env.CAML_LD_LIBRARY_PATH = ('/home/chris/.opam/default/lib/stublibs')
+$env.PATH = ($env.PATH | prepend '/home/chris/.opam/default/bin')
 
 # Zellij
 alias z = zellij -l compact --layout /home/chris/.zellij/layout.kdl
