@@ -1,0 +1,4 @@
+theme = "Dracula"
+font-family = "JetBrains Mono"
+window-width = 150
+window-height = 45
