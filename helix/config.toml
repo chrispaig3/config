@@ -2,12 +2,16 @@ theme = "dracula"
 
 [editor]
 line-number = "relative"
+end-of-line-diagnostics = "hint"
 auto-completion = true
 auto-info = true
 completion-trigger-len = 2
 true-color = true
-shell = ["zsh", "-c"]
+shell = ["nu", "-c"]
 color-modes = true
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
 
 [editor.statusline]
 left = ["mode", "spinner"]
