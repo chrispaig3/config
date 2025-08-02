@@ -114,6 +114,9 @@ $env.HELIX_RUNTIME = ('/Users/chris/.helix/helix/runtime')
 $env.CAML_LD_LIBRARY_PATH = ('/Users/chris/.opam/default/lib/stublibs')
 $env.PATH = ($env.PATH | prepend '/Users/chris/.opam/default/bin')
 
+# CPATH
+$env.CPATH = ('/opt/homebrew/include')
+
 # Zellij
 alias z = zellij -l compact --layout /Users/chris/.zellij/layout.kdl
 
