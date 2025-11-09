@@ -80,36 +80,36 @@ $env.NU_PLUGIN_DIRS = [
 
 # To load from a custom file you can use:
 # source ($nu.default-config-dir | path join 'custom.nu')
-$env.PATH = ($env.PATH | prepend '/home/chris/.local/bin')
+$env.PATH = ($env.PATH | prepend '/Users/chris/.local/bin')
 
 # Cargo Bin
-$env.PATH = ($env.PATH | prepend '/home/chris/.cargo/bin')
+$env.PATH = ($env.PATH | prepend '/Users/chris/.cargo/bin')
 
 # SurrealDB
-$env.PATH = ($env.PATH | prepend '/home/chris/.surrealdb')
+$env.PATH = ($env.PATH | prepend '/Users/chris/.surrealdb')
 
 # Zig
-$env.PATH = ($env.PATH | prepend '/home/chris/.zig')
-$env.PATH = ($env.PATH | prepend '/home/chris/.zls/zig-out/bin')
+$env.PATH = ($env.PATH | prepend '/Users/chris/.zig')
+$env.PATH = ($env.PATH | prepend '/Users/chris/.zls/zig-out/bin')
 
 # Go Bin
-$env.PATH = ($env.PATH | prepend '/home/chris/go/bin')
+$env.PATH = ($env.PATH | prepend '/Users/chris/go/bin')
 
 # Bun Bin
-$env.PATH = ($env.PATH | prepend '/home/chris/.bun/bin')
+$env.PATH = ($env.PATH | prepend '/Users/chris/.bun/bin')
 
 # Nimble Bin
-$env.PATH = ($env.PATH | prepend '/home/chris/.nimble/bin')
+$env.PATH = ($env.PATH | prepend '/Users/chris/.nimble/bin')
 
 # Radicle
-$env.PATH = ($env.PATH | prepend '/home/chris/.radicle/bin')
+$env.PATH = ($env.PATH | prepend '/Users/chris/.radicle/bin')
 
 # Helix Runtime
-$env.HELIX_RUNTIME = ('/home/chris/.helix/helix/runtime')
+$env.HELIX_RUNTIME = ('/Users/chris/.helix/helix/runtime')
 
 # Ocaml Setup
-$env.CAML_LD_LIBRARY_PATH = ('/home/chris/.opam/default/lib/stublibs')
-$env.PATH = ($env.PATH | prepend '/home/chris/.opam/default/bin')
+$env.CAML_LD_LIBRARY_PATH = ('/Users/chris/.opam/default/lib/stublibs')
+$env.PATH = ($env.PATH | prepend '/Users/chris/.opam/default/bin')
 
 # Zellij
-alias z = zellij -l compact --layout /home/chris/.zellij/layout.kdl
+alias z = zellij -l compact --layout /Users/chris/.zellij/layout.kdl
