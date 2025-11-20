@@ -80,9 +80,9 @@ $env.NU_PLUGIN_DIRS = [
 
 # To load from a custom file you can use:
 # source ($nu.default-config-dir | path join 'custom.nu')
-$env.PATH = ($env.PATH | prepend '/Users/chris/.foundry/bin')
 $env.PATH = ($env.PATH | prepend '/opt/podman/bin')
 $env.PATH = ($env.PATH | prepend '/opt/homebrew/bin')
+$env.PATH = ($env.PATH | prepend '/opt/homebrew/opt/llvm/bin')
 $env.PATH = ($env.PATH | prepend '/Users/chris/.local/bin')
 
 # Cargo Bin
